@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+    border-bottom: 2px solid yellow;
+  }
+  
+  /* Logo Styling */
+  .logo h1 {
+    font-size: 30px;
+    color: #f0e68c; /* Golden color for chess theme */
+  }
+  
+  /* Navigation Menu Styling */
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover Effect on Links */
+  nav ul li a:hover {
+    color: #f0e68c; /* Golden hover color */
+  }
+  
+  /* Mobile Menu Toggle (Hidden by Default) */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Styles for Smaller Screens */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #111;
+      border-top: 1px solid #444;
+    }
+  
+    nav ul li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-active nav ul {
+      display: flex;
+    }
+  }
+  /* Hero Section Styling */
+.hero {
+    height: 100vh;
+    background-image: url('img2.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Hero Overlay for Darkening the Background */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adds a dark overlay */
+    z-index: 1;
+  }
+  
+  /* Hero Content Styling */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f0e68c; /* Gold color for chess theme */
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #ddd;
+  }
+  
+  /* Button Styling */
+  .hero-buttons {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-learn {
+    background-color: #f0e68c;
+    color: #111;
+  }
+  
+  .btn-learn:hover {
+    background-color: #ffe08a;
+    transform: scale(1.05);
+  }
+  
+  .btn-puzzles {
+    background-color: #fff;
+    color: #111;
+  }
+  
+  .btn-puzzles:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  
+    .btn {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+  
